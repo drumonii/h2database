@@ -102,6 +102,7 @@ toolbar.autoSelect=#Auto select
 toolbar.autoSelect.off=Desactivado
 toolbar.autoSelect.on=#On
 toolbar.cancelStatement=Cancelar la instrucción actual
+toolbar.format=Format
 toolbar.clear=Eliminar
 toolbar.commit=Commit
 toolbar.disconnect=Desconectar

@@ -102,6 +102,7 @@ toolbar.autoSelect=#Auto select
 toolbar.autoSelect.off=Vypnuto
 toolbar.autoSelect.on=#On
 toolbar.cancelStatement=Zrušit prováděný příkaz
+toolbar.format=Format
 toolbar.clear=Vyčistit
 toolbar.commit=Vložit
 toolbar.disconnect=Odpojit

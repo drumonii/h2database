@@ -9,6 +9,7 @@ Initial Developer: H2 Group
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <title>${text.a.title}</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script type="text/javascript" src="sql-formatter.min.js"></script>
         <script type="text/javascript">
 //<!--
 
@@ -505,6 +506,13 @@ function doAutoSelect() {
     }
 }
 
+function format() {
+    var sql = document.h2query.sql.value;
+    if (sql) {
+        document.h2query.sql.value = sqlFormatter.format(sql);
+    }
+}
+
 //-->
 </script>
 </head>
@@ -514,6 +522,7 @@ function doAutoSelect() {
                 <input type="button" class="button" value="${text.toolbar.run}" onclick="javascript:submitAll();sql.focus();return true;" />
                 <input type="button" class="button" value="${text.toolbar.runSelected}" onclick="javascript:submitSelected();sql.focus();return true;" />
                 <input type="button" class="button" value="${text.toolbar.autoComplete}" onclick="javascript:manualAutoComplete();sql.focus();return true;" />
+                <input type="button" class="button" value="${text.toolbar.format}" onclick="javascript:format();sql.focus();return true;" />
                 <input type="button" class="button" value="${text.toolbar.clear}" onclick="javascript:sql.value='';keyUp();sql.focus();return true;" />
                 ${text.toolbar.sqlStatement}:
             </span>
